@@ -7,7 +7,7 @@ import (
   "fmt"
 )
 
-func readLines(path string) []string {
+func ReadLines(path string) []string {
 	file, _ := os.Open(path)
 
 	var lines []string
@@ -21,7 +21,7 @@ func readLines(path string) []string {
 	return lines
 }
 
-func readFile(path string) string {
+func ReadFile(path string) string {
 	filerc, _ := os.Open(path)
 
 	buf := new(bytes.Buffer)
@@ -31,7 +31,7 @@ func readFile(path string) string {
 	return content
 }
 
-func writeLines(lines []string, path string) error {
+func WriteLines(lines []string, path string) error {
 	file, err := os.Create(path)
 
 	if err != nil {
