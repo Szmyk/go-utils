@@ -2,8 +2,9 @@ package files
 
 import (
   "os"
-  "strings"
   "bufio"
+  "bytes"
+  "fmt"
 )
 
 func readLines(path string) []string {
